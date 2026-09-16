@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<script>
+(function () {
+  if (!/\.github\.io$/i.test(location.hostname)) return;
+  var b = document.createElement('base');
+  b.href = '/gusto-organik/';
+  document.head.appendChild(b);
+})();
+</script>
+<title>Gusto Organik | Tarabya — Mekân önizlemesi</title>
+<meta name="description" content="Tarabya Şalcıkır Cd. 9A. Organik mahalle dükkânı — uğrayın, reyonu yerinde görün.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#121C19">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<style id="themeVars">:root{--accent:hsl(168 34% 24%);--accent-deep:hsl(168 34% 14%);--accent-hover:hsl(168 34% 22%);--accent-soft:hsl(168 40% 92%);--accent-glow:hsla(168,34%,24%,0.22);}</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mekan.css">
+</head>
+<body class="page-mekan">
+
+<div class="mk-preview">
+  Önizleme — satış vitrini değil, dükkânın reklamı.
+  <a href="index.html">Mevcut site</a>
+</div>
+
+<header class="site-header surface-glass">
+  <div class="container header-inner">
+    <a href="#top" class="brand-lockup" aria-label="Gusto Organik anasayfa">
+      <span class="brand-logo-badge">GO</span>
+      <span class="brand-text">
+        <span class="brand-name">Gusto Organik</span>
+        <span class="brand-sub">Tarabya</span>
+      </span>
+    </a>
+
+    <nav class="nav-links-desktop" aria-label="Ana menü">
+      <a href="#galeri" class="nav-link">Mekân</a>
+      <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+      <a href="#menu" class="nav-link">Reyon</a>
+      <a href="#yorumlar" class="nav-link">Yorumlar</a>
+      <a href="#iletisim" class="nav-link">Yol</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="live-status-pill is-open" id="liveStatusPill">
+        <span class="pulse-dot"></span>
+        <span class="status-label-full" id="liveStatusLabelFull">Şu an Kapalı — bugün 09:00 açılıyor</span>
+        <span class="status-label-short" id="liveStatusLabelShort">Kapalı</span>
+      </div>
+      <a class="nav-call-btn" href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.957-1.401A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>
+        <span class="call-text">0531 648 86 96</span>
+      </a>
+      <button type="button" class="mobile-menu-btn surface-glass" id="mobileMenuToggle" aria-label="Menüyü aç" aria-expanded="false">
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="mobile-drawer-content">
+    <a href="#galeri" class="nav-link">Mekân</a>
+    <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+    <a href="#menu" class="nav-link">Reyon</a>
+    <a href="#yorumlar" class="nav-link">Yorumlar</a>
+    <a href="#iletisim" class="nav-link">Yol</a>
+    <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." class="btn btn-primary drawer-cta" target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz</a>
+  </div>
+</div>
+
+<main id="top">
+
+<section class="mk-hero">
+  <div class="mk-hero-aurora" aria-hidden="true"></div>
+  <div class="container mk-hero-grid">
+    <div>
+      <span class="mk-kicker">Tarabya · Şalcıkır Cd. 9A</span>
+      <h1 class="mk-hero-title">Mahallenin durduğu dükkân<em>Gusto Organik</em></h1>
+      <p class="mk-hero-lead">Kapı Şalcıkır Caddesi’nde. İçeride taze manav, şarküteri ve günlük reyon. Burası bir online market değil; uğrayın, rafları yerinde görün.</p>
+      <div class="mk-hero-actions">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1381258,29.0524474&amp;destination_place_id=0x14cab560139cc873:0x15ccd5902cc23270" target="_blank" rel="noopener noreferrer">Yol tarifi</a>
+        <a class="btn btn-secondary surface-glass" href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz</a>
+        <a class="btn btn-secondary surface-glass" href="#galeri">Dükkânı görün</a>
+      </div>
+    </div>
+    <div class="mk-hero-media">
+      <div class="mk-photo mk-hero-main">
+        <img src="images/hero-kapak.webp" alt="Gusto Organik Tarabya dış cephe tabelası ve vitrin" width="1517" height="1132" style="object-position: 50% 42%;" decoding="async" fetchpriority="high">
+      </div>
+      <div class="mk-photo mk-hero-inset">
+        <img src="images/urun-1.webp" alt="Gusto Organik iç mekân reyonları" width="1024" height="1365" style="object-position: 50% 40%;" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mk-strip-wrap">
+  <div class="container">
+    <div class="mk-strip">
+      <div class="mk-strip-item">
+        <span class="mk-strip-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="mk-strip-num">4,8</span>
+        <span class="mk-strip-label">Google · 30 değerlendirme</span>
+      </div>
+      <a class="mk-strip-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1381258,29.0524474&amp;destination_place_id=0x14cab560139cc873:0x15ccd5902cc23270" target="_blank" rel="noopener noreferrer">
+        <span class="mk-strip-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </span>
+        <span class="mk-strip-num">Tarabya</span>
+        <span class="mk-strip-label">Şalcıkır Cd. 9A · Yol tarifi</span>
+      </a>
+      <div class="mk-strip-item">
+        <span class="mk-strip-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        </span>
+        <span class="mk-strip-num">7 gün</span>
+        <span class="mk-strip-label">Pazartesi–Pazar açık</span>
+      </div>
+      <div class="mk-strip-item">
+        <span class="mk-strip-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </span>
+        <span class="mk-strip-num">Servis</span>
+        <span class="mk-strip-label">Mahalle teslimatı yorumlarda</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="galeri">
+  <div class="container">
+    <div class="section-header left">
+      <span class="section-eyebrow">Mekân</span>
+      <h2 class="section-title">Şalcıkır Caddesi 9A</h2>
+      <p class="section-lead">Tabela, vitrin, reyon. Burası bir sepet değil; Tarabya’da durduğunuz dükkân.</p>
+    </div>
+    <div class="mk-place-grid">
+      <a class="mk-place-card" href="#iletisim">
+        <figure>
+          <img src="images/hero-kapak.webp" alt="Gusto Organik dış cephe" width="1517" height="1132" style="object-position: 50% 46%;" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Tabela ve vitrin</h3>
+            <p>Şalcıkır Caddesi 9A. Kapıdan girin.</p>
+          </figcaption>
+        </figure>
+      </a>
+      <a class="mk-place-card" href="#menu">
+        <figure>
+          <img src="images/urun-1.webp" alt="Gusto Organik iç mekân reyonları" width="1024" height="1365" style="object-position: 50% 40%;" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Reyon</h3>
+            <p>Ahşap raflar, taze manav ve şarküteri.</p>
+          </figcaption>
+        </figure>
+      </a>
+      <a class="mk-place-card" href="#menu">
+        <figure>
+          <img src="images/mekan-1.webp" alt="Gusto Organik doğal bakım reyonu" width="1600" height="972" style="object-position: 48% 42%;" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Doğal bakım</h3>
+            <p>Kişisel bakım ve doğal kozmetik rafı.</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section mk-about" id="hakkimizda">
+  <div class="container about-grid">
+    <div class="about-image-frame">
+      <img src="images/urun-1.webp" alt="Gusto Organik iç mekân reyonları" width="1024" height="1365" style="object-position: 50% 40%;" loading="lazy" decoding="async">
+    </div>
+    <div class="about-content">
+      <span class="section-eyebrow">Mekân</span>
+      <h2 class="section-title">Tarabya’nın sakin organik marketi</h2>
+      <div class="about-paragraphs">
+        <p class="about-paragraph">Gusto Organik, Şalcıkır Caddesi 9A’da durur. Tabelada doğal ürünler yazar; içeride taze manav ve şarküteri vardır.</p>
+        <p class="about-paragraph">Komşularımız temiz içeriği, ilgili kadroyu ve ev servisini anlatıyor. Instagram’da @gustoorganik.</p>
+      </div>
+      <blockquote class="about-quote">Sokağımızın altına açılan cevher.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="container">
+    <div class="section-header left">
+      <span class="section-eyebrow">Dükkânda</span>
+      <h2 class="section-title">Raflarda neler var</h2>
+      <p class="section-lead">Kartlardaki görseller stok örneğidir; dükkândaki ürün günü gününe değişir. Fiyat ve stok için yazın veya uğrayın.</p>
+    </div>
+    <div class="mk-chips" id="menuFilterTabs" role="tablist" aria-label="Reyonlar">
+      <button type="button" class="mk-chip is-active" data-category="all" aria-pressed="true">Tümü</button>
+      <button type="button" class="mk-chip" data-category="manav" aria-pressed="false">Manav</button>
+      <button type="button" class="mk-chip" data-category="sarkuteri" aria-pressed="false">Şarküteri</button>
+      <button type="button" class="mk-chip" data-category="ozel" aria-pressed="false">Özel beslenme</button>
+    </div>
+    <div class="mk-reyon-grid" id="menuCategoriesWrap">
+      <article class="mk-reyon-card" data-category="manav" data-keywords="organik meyve gunun taze meyvesi manav">
+        <div class="mk-reyon-photo">
+          <img src="images/ornek/meyve.webp" alt="Örnek fotoğraf: organik meyve" loading="lazy" decoding="async" style="object-position: 50% 50%;">
+          <span class="mk-reyon-tag">Manav</span>
+          <span class="mk-reyon-sample">Örnek fotoğraf</span>
+        </div>
+        <div class="mk-reyon-body">
+          <h3>Organik meyve</h3>
+          <p>Günün taze meyvesi. Stok için yazın.</p>
+          <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz — dükkânda sorun</a>
+        </div>
+      </article>
+      <article class="mk-reyon-card" data-category="manav" data-keywords="organik sebze mevsim sebzesi manav">
+        <div class="mk-reyon-photo">
+          <img src="images/ornek/sebze.webp" alt="Örnek fotoğraf: organik sebze" loading="lazy" decoding="async" style="object-position: 50% 48%;">
+          <span class="mk-reyon-tag">Manav</span>
+          <span class="mk-reyon-sample">Örnek fotoğraf</span>
+        </div>
+        <div class="mk-reyon-body">
+          <h3>Organik sebze</h3>
+          <p>Mevsim sebzesi. Stok için yazın.</p>
+          <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz — dükkânda sorun</a>
+        </div>
+      </article>
+      <article class="mk-reyon-card" data-category="sarkuteri" data-keywords="sarkuteri gunluk reyon">
+        <div class="mk-reyon-photo">
+          <img src="images/ornek/sarkuteri.webp" alt="Örnek fotoğraf: şarküteri" loading="lazy" decoding="async" style="object-position: 50% 52%;">
+          <span class="mk-reyon-tag">Şarküteri</span>
+          <span class="mk-reyon-sample">Örnek fotoğraf</span>
+        </div>
+        <div class="mk-reyon-body">
+          <h3>Şarküteri</h3>
+          <p>Günlük şarküteri reyonu.</p>
+          <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz — dükkânda sorun</a>
+        </div>
+      </article>
+      <article class="mk-reyon-card" data-category="ozel" data-keywords="vegan urunler ozel beslenme">
+        <div class="mk-reyon-photo">
+          <img src="images/ornek/vegan.webp" alt="Örnek fotoğraf: vegan ürünler" loading="lazy" decoding="async" style="object-position: 50% 50%;">
+          <span class="mk-reyon-tag">Özel beslenme</span>
+          <span class="mk-reyon-sample">Örnek fotoğraf</span>
+        </div>
+        <div class="mk-reyon-body">
+          <h3>Vegan ürünler</h3>
+          <p>Vegan reyon. Güncel stok için yazın.</p>
+          <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz — dükkânda sorun</a>
+        </div>
+      </article>
+      <article class="mk-reyon-card" data-category="ozel" data-keywords="glutensiz urunler ozel beslenme">
+        <div class="mk-reyon-photo">
+          <img src="images/ornek/glutensiz.webp" alt="Örnek fotoğraf: glutensiz ürünler" loading="lazy" decoding="async" style="object-position: 50% 50%;">
+          <span class="mk-reyon-tag">Özel beslenme</span>
+          <span class="mk-reyon-sample">Örnek fotoğraf</span>
+        </div>
+        <div class="mk-reyon-body">
+          <h3>Glutensiz ürünler</h3>
+          <p>Glutensiz reyon. Güncel çeşit için yazın.</p>
+          <a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz — dükkânda sorun</a>
+        </div>
+      </article>
+    </div>
+    <p class="empty-state" id="menuNoResults" style="display: none;">Bu reyon için kayıt yok.</p>
+  </div>
+</section>
+
+<section class="section" id="yorumlar">
+  <div class="container">
+    <div class="section-header left">
+      <span class="section-eyebrow">Komşularımız</span>
+      <h2 class="section-title">Mahalleden notlar</h2>
+      <p class="section-lead">30 değerlendirme, 4,8 puan. Alıntılar Google Haritalar’dan.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card surface-glass">
+        <div>
+          <div class="rating-stars" aria-label="5 yıldız"><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></div>
+          <p class="testimonial-quote">“Organik taze meyve sebzeler harika, şarküteride aradığım her şeyi bulabildim, eve servisleri de var. Tavsiye ederim.”</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div class="author-meta">
+            <span class="author-name">Ahmet Sahon</span>
+            <span class="author-service">Yerel Rehber</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card surface-glass">
+        <div>
+          <div class="rating-stars" aria-label="5 yıldız"><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="1" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></div>
+          <p class="testimonial-quote">“Sokağımızın altına açılan cevher. Temiz içerik, ilgili, donanımlı kadro ve en güzeli de evimize servis.”</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">V</div>
+          <div class="author-meta">
+            <span class="author-name">Vera Caen Algranati</span>
+            <span class="author-service">Yerel Rehber</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review-cta-wrap" id="reviewCtaSlot">
+      <a class="btn btn-secondary surface-glass review-cta" href="https://search.google.com/local/writereview?placeid=0x14cab560139cc873:0x15ccd5902cc23270" target="_blank" rel="noopener noreferrer">Google'da Yorum Yaz</a>
+    </div>
+  </div>
+</section>
+
+<section class="mk-visit" id="ziyaret">
+  <div class="container">
+    <div class="mk-visit-card">
+      <div class="mk-visit-copy">
+        <span class="section-eyebrow">Ziyaret</span>
+        <h2>Tarabya’da sizi bekleriz</h2>
+        <p>Şalcıkır Caddesi 9A. Yol tarifi alın veya yazın — dükkân yerinde.</p>
+        <div class="mk-visit-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1381258,29.0524474&amp;destination_place_id=0x14cab560139cc873:0x15ccd5902cc23270" target="_blank" rel="noopener noreferrer">Yol tarifi</a>
+          <a class="btn btn-secondary" href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Yaz</a>
+        </div>
+      </div>
+      <div class="mk-visit-photo">
+        <img src="images/hero-kapak.webp" alt="Gusto Organik cephesi" width="1517" height="1132" style="object-position: 50% 42%;" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sss">
+  <div class="container">
+    <div class="section-header left">
+      <span class="section-eyebrow">Bilgi</span>
+      <h2 class="section-title">Kısa sorular</h2>
+      <p class="section-lead">Yanıtı burada yoksa bize yazın.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item surface-glass" open>
+        <summary class="faq-question">
+          <span>Sipariş veya bilgi için nasıl ulaşabilirim?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="faq-answer"><p>Mesajınızı yazın; tek tıkla WhatsApp üzerinden gönderin. Numaramız 0531 648 86 96.</p></div>
+      </details>
+      <details class="faq-item surface-glass">
+        <summary class="faq-question">
+          <span>Çalışma saatleriniz nedir?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="faq-answer"><p>Pazartesi 08:30–20:30, salı–cuma 09:00–20:30, cumartesi 09:00–19:30, pazar 11:00–18:00.</p></div>
+      </details>
+      <details class="faq-item surface-glass">
+        <summary class="faq-question">
+          <span>Ev servisi var mı?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="faq-answer"><p>Mahalle teslimatı yorumlarda geçiyor. Güncel kapsam için yazın.</p></div>
+      </details>
+      <details class="faq-item surface-glass">
+        <summary class="faq-question">
+          <span>Neler satıyorsunuz?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="faq-answer"><p>Organik meyve-sebze, şarküteri, vegan ve glutensiz ürünler. Güncel reyon için yazın.</p></div>
+      </details>
+      <details class="faq-item surface-glass">
+        <summary class="faq-question">
+          <span>Neredesiniz?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="faq-answer"><p>Tarabya, Şalcıkır Cd. 9A, 34457 Sarıyer / İstanbul.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="iletisim">
+  <div class="container">
+    <div class="section-header left">
+      <span class="section-eyebrow">Yol</span>
+      <h2 class="section-title">Kapıyı bulun</h2>
+      <p class="section-lead">Şalcıkır Caddesi 9A, Tarabya.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card surface-glass">
+        <h3 class="contact-card-title">İletişim</h3>
+        <p class="contact-card-sub">Şalcıkır Caddesi 9A</p>
+        <div id="contactItems">
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-item-details">
+              <span class="contact-item-title">Telefon</span>
+              <span class="contact-item-value"><a href="tel:+905316488696">0531 648 86 96</a></span>
+            </div>
+          </div>
+          <div class="contact-item-row">
+            <div class="contact-icon-box" style="background: rgba(34, 197, 94, 0.12); color: #16a34a;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </div>
+            <div class="contact-item-details">
+              <span class="contact-item-title">WhatsApp</span>
+              <span class="contact-item-value"><a href="https://wa.me/905316488696?text=Merhaba%2C%20Gusto%20Organik&#039;ten%20bilgi%20%2F%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer">0531 648 86 96</a></span>
+            </div>
+          </div>
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-item-details">
+              <span class="contact-item-title">Adres</span>
+              <span class="contact-item-value">Tarabya, Şalcıkır Cd. 9A, 34457, Sarıyer / İstanbul</span>
+            </div>
+          </div>
+        </div>
+        <table class="hours-table" aria-label="Çalışma saatleri">
+          <tbody>
+            <tr><td class="day">Pazartesi</td><td class="time">08:30 — 20:30</td></tr>
+            <tr><td class="day">Salı — Cuma</td><td class="time">09:00 — 20:30</td></tr>
+            <tr><td class="day">Cumartesi</td><td class="time">09:00 — 19:30</td></tr>
+            <tr><td class="day">Pazar</td><td class="time">11:00 — 18:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="map-frame surface-glass" id="harita">
+        <iframe src="https://maps.google.com/maps?q=41.1381258,29.0524474(Gusto%20Organik)&amp;z=17&amp;hl=tr&amp;output=embed" title="Gusto Organik konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1381258,29.0524474&amp;destination_place_id=0x14cab560139cc873%3A0x15ccd5902cc23270" target="_blank" rel="noopener noreferrer">Yol Tarifi Al</a>
+          <a class="btn btn-secondary surface-glass" href="https://share.google/ybEyERWvXu7t6y0h0" target="_blank" rel="noopener noreferrer">Google'da Gör</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer surface-glass">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Gusto Organik</div>
+        <p class="footer-desc">Tarabya’da organik mahalle dükkânı. Manav, şarküteri, vegan ve glutensiz ürünler.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col-title">Keşfet</div>
+        <a href="#galeri">Mekân</a>
+        <a href="#menu">Reyon</a>
+        <a href="#yorumlar">Yorumlar</a>
+        <a href="#iletisim">Yol</a>
+        <a href="https://www.instagram.com/gustoorganik/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Gusto Organik. Tüm hakları saklıdır.</div>
+  </div>
+</footer>
+
+<script src="js/shared-templates.js"></script>
+<script src="js/site-data.js"></script>
+<script src="js/mekan.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin.html
+Disallow: /mekan.html
 Disallow: /tools/
 
 Sitemap: https://basaranbaran.github.io/gusto-organik/sitemap.xml

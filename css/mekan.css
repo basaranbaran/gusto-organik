@@ -1,0 +1,489 @@
+/* Mekân varyantı — FoodFarm ritmi, satış sepeti yok.
+   Tokenlar style.css'ten; burada yalnızca kompozisyon. */
+
+.page-mekan {
+  --container-max: 1180px;
+  --mk-photo-radius: 28px;
+}
+.page-mekan .site-header {
+  z-index: 400;
+  background: rgba(246, 243, 236, 0.86);
+}
+
+.mk-preview {
+  position: relative;
+  z-index: 300;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 20px;
+  min-height: 44px;
+  padding: 10px 20px;
+  background: var(--surface-dark-solid);
+  color: var(--text-inverse-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-align: center;
+}
+.mk-preview a {
+  color: #E8D9B8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.page-mekan .site-header { top: 0; }
+@media (min-width: 720px) {
+  .page-mekan { --header-height: 80px; }
+}
+
+/* ----- Hero: sol metin, sağ büyük fotoğraf + örtüşen ikinci kare ----- */
+.mk-hero {
+  position: relative;
+  padding: clamp(40px, 6vw, 72px) 0 clamp(48px, 7vw, 88px);
+  overflow: hidden;
+}
+.mk-hero-aurora {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 48% 58% at 8% 18%, hsla(38, 28%, 48%, 0.16), transparent 64%),
+    radial-gradient(ellipse 40% 48% at 92% 12%, hsla(168, 34%, 24%, 0.09), transparent 62%);
+}
+.mk-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .mk-hero-grid {
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 48px;
+  }
+}
+.mk-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  margin-bottom: 20px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--surface-card);
+  border: 1px solid rgba(166, 138, 74, 0.28);
+  color: var(--brand-gold-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.mk-hero-title {
+  font-size: clamp(2.6rem, 5.6vw, 4.35rem);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.038em;
+  margin-bottom: 20px;
+}
+.mk-hero-title em {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--brand-gold-dark);
+}
+.mk-hero-lead {
+  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+.mk-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.mk-hero-media {
+  position: relative;
+  min-height: 280px;
+}
+.mk-photo {
+  overflow: hidden;
+  border-radius: var(--mk-photo-radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(166, 138, 74, 0.22);
+}
+.mk-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mk-hero-main {
+  position: relative;
+  width: 86%;
+  margin-left: auto;
+  aspect-ratio: 4 / 5;
+  max-height: 640px;
+  background: var(--surface-dark-solid);
+}
+.mk-hero-main img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 58%;
+}
+.mk-hero-inset {
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  width: 44%;
+  aspect-ratio: 3 / 4;
+  border: 6px solid var(--bg-main);
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 991px) {
+  .mk-hero-media { order: -1; }
+  .mk-hero-main {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    max-height: none;
+  }
+  .mk-hero-inset {
+    width: 38%;
+    bottom: 16px;
+    left: 16px;
+    border-width: 4px;
+  }
+}
+
+/* ----- 4’lü güven şeridi (FoodFarm ikon sırası → ziyaret gerçeği) ----- */
+.mk-strip-wrap {
+  padding-bottom: clamp(40px, 6vw, 64px);
+}
+.mk-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+  border: 1px solid rgba(166, 138, 74, 0.14);
+}
+@media (min-width: 880px) {
+  .mk-strip {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 8px;
+  }
+}
+.mk-strip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 16px 12px;
+  min-height: 44px;
+  color: inherit;
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+a.mk-strip-item:hover { transform: translateY(-3px); }
+a.mk-strip-item:active { transform: scale(0.98); }
+.mk-strip-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.mk-strip-num {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+}
+.mk-strip-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  max-width: 180px;
+}
+
+/* ----- Mekân karoları (ürün fotoğrafı ritmi, reyon/cephe) ----- */
+.mk-place-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 720px) {
+  .mk-place-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.mk-place-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-card);
+  border: 1px solid rgba(166, 138, 74, 0.12);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+}
+.mk-place-card:hover { transform: translateY(-4px); }
+.mk-place-card figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mk-place-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 500ms var(--ease-apple);
+}
+.mk-place-card:hover img { transform: scale(1.03); }
+.mk-place-card figcaption {
+  padding: 20px 20px 24px;
+}
+.mk-place-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+.mk-place-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ----- Reyon vitrin kartları ----- */
+.mk-chips {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-bottom: 32px;
+  scrollbar-width: none;
+}
+.mk-chips::-webkit-scrollbar { display: none; }
+.mk-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--surface-card);
+  border: 1px solid var(--surface-glass-border);
+}
+.mk-chip:hover { color: var(--accent); }
+.mk-chip.is-active {
+  background: var(--accent);
+  color: var(--text-inverse);
+  border-color: transparent;
+}
+
+.mk-reyon-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .mk-reyon-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .mk-reyon-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.mk-reyon-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-card);
+  border: 1px solid rgba(166, 138, 74, 0.12);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+}
+.mk-reyon-card:hover { transform: translateY(-4px); }
+.mk-reyon-card.is-hidden { display: none; }
+.mk-reyon-photo {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+.mk-reyon-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms var(--ease-apple);
+}
+.mk-reyon-card:hover .mk-reyon-photo img { transform: scale(1.04); }
+.mk-reyon-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 252, 247, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.mk-reyon-sample {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  z-index: 1;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #86868b;
+  background: rgba(255, 252, 247, 0.82);
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+}
+.mk-reyon-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 20px 22px;
+  flex: 1;
+}
+.mk-reyon-body h3 {
+  font-size: 1.2rem;
+}
+.mk-reyon-body p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+.mk-reyon-body a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ----- Hakkımızda ----- */
+.mk-about {
+  background: var(--bg-secondary);
+}
+.mk-about .about-grid { align-items: stretch; }
+.mk-about .about-image-frame {
+  aspect-ratio: 4 / 5;
+  height: 100%;
+}
+.mk-about .about-content {
+  background: var(--surface-card);
+  border: 1px solid rgba(166, 138, 74, 0.12);
+}
+
+/* ----- Ziyaret bandı (FoodFarm bülten şeridi → uğrayın) ----- */
+.mk-visit {
+  padding-block: clamp(48px, 8vw, 88px);
+}
+.mk-visit-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: var(--surface-dark-solid);
+  color: var(--text-inverse);
+  min-height: 320px;
+}
+@media (min-width: 880px) {
+  .mk-visit-card { grid-template-columns: 1.1fr 0.9fr; }
+}
+.mk-visit-copy {
+  padding: clamp(32px, 5vw, 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.mk-visit-copy .section-eyebrow { color: #E8D9B8; margin-bottom: 0; }
+.mk-visit-copy h2 {
+  color: var(--text-inverse);
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  margin: 0;
+}
+.mk-visit-copy p {
+  color: var(--text-inverse-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 440px;
+}
+.mk-visit-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.mk-visit-actions .btn-primary {
+  background: #E8D9B8;
+  color: var(--surface-dark-solid);
+}
+.mk-visit-actions .btn-primary:hover { background: #f3ead4; }
+.mk-visit-actions .btn-secondary {
+  background: transparent;
+  color: var(--text-inverse);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.mk-visit-photo {
+  min-height: 240px;
+  overflow: hidden;
+}
+.mk-visit-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-mekan .section-header { margin-bottom: 40px; }
+.page-mekan .section-header.left {
+  text-align: left;
+  margin-inline: 0;
+  max-width: 640px;
+}
+.page-mekan .section-header.left .section-lead { margin-inline: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mk-place-card:hover,
+  .mk-reyon-card:hover,
+  a.mk-strip-item:hover,
+  a.mk-strip-item:active { transform: none; }
+  .mk-place-card:hover img,
+  .mk-reyon-card:hover .mk-reyon-photo img { transform: none; }
+}
+
+@media (max-width: 720px) {
+  .mk-preview {
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mk-hero-actions { flex-direction: column; align-items: stretch; }
+  .mk-hero-actions .btn { width: 100%; }
+  .mk-visit-actions .btn { width: 100%; }
+}

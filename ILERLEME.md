@@ -2,7 +2,7 @@
 
 Maps linki: https://share.google/ybEyERWvXu7t6y0h0
 Başlangıç: 2026-09-16
-Son güncelleme: 2026-09-17 00:35
+Son güncelleme: 2026-09-17 01:51
 
 ## Durum
 **Şu an: FAZ 4/4 — TESLİM**
@@ -35,6 +35,13 @@ grep googleusercontent → boş
 375/1440 taşma yok, JS hatası 0
 wrangler pages deploy → 27 dosya
 ```
+
+## Mekân varyantı (değerlendirme)
+- `mekan.html` — FoodFarm UI ritmi, satış sepeti yok, dükkân reklamı. Canlı: https://basaranbaran.github.io/gusto-organik/mekan.html
+- Mevcut `index.html` duruyor. Beğenilirse sonra ana sayfaya alınır.
+
+## Logo
+- Header’da GO rozeti kaldı; tabela kesiti denenip geri alındı.
 
 ## Açık işler / bilinen eksikler
 - Menü fiyatları panelden girilecek
