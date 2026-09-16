@@ -1,0 +1,11 @@
+{
+  "username": "gusto_yonetim",
+  "algo": "PBKDF2-SHA256",
+  "iterations": 100000,
+  "salt": "c91e04a7b6d82f153e40a8c7",
+  "hash": "5cefb5bb1bfcae7717ba4427ad0837bab97e4422c79ed472052945bae8f113b1",
+  "isFirstLogin": true,
+  "lastChanged": null,
+  "lockoutSeconds": 60,
+  "maxAttempts": 5
+}

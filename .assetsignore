@@ -1,0 +1,7 @@
+# İç notlar — canlı siteye gitmesin
+ILERLEME.md
+TESLIM-ONCESI-KONTROL-LISTESI.md
+.DS_Store
+.git
+.wrangler
+node_modules

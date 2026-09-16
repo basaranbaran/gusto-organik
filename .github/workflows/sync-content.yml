@@ -1,0 +1,48 @@
+name: İçerik Senkronizasyonu
+
+# Yönetim paneli data/site-data.json dosyasını doğrudan GitHub API ile günceller.
+# Bu workflow, o değişikliği statik HTML'e (index.html, sitemap.xml, llms.txt)
+# senkronize eder ve commit'i doğrudan aynı branch'e geri yazar.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/site-data.json"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-content-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Statik HTML üret
+        run: node tools/build.mjs
+
+      - name: Değişiklikleri commit'le (varsa)
+        run: |
+          git config user.name "gusto-content-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add index.html sitemap.xml llms.txt
+            git commit -m "chore: statik içerik senkronize edildi [skip ci]"
+            git push
+          else
+            echo "Değişiklik yok, statik HTML zaten güncel."
+          fi

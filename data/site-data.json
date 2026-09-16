@@ -1,0 +1,268 @@
+{
+  "schema": 3,
+  "contentVersion": "2026-09-17T00:45:00.000Z",
+  "menuStatus": "pending",
+
+  "theme": {
+    "sector": "grocery",
+    "character": "klasik",
+    "accentHue": 168,
+    "accentSat": 34,
+    "accentLight": 24,
+    "darkModeDefault": false,
+    "radius": 24,
+    "headingFont": "Iowan Old Style",
+    "source": "Tarabya cephesindeki koyu orman yeşili tabela ve DOĞAL ÜRÜNLER yazısındaki şampanya tondan. Karakter klasik: fildişi zemin, sistem serif başlık — Tarabya mahalle marketinin sakin hali.",
+    "presets": ["orman", "fildisi", "sampanya", "tas"]
+  },
+
+  "sections": {
+    "features": {
+      "visible": true,
+      "eyebrow": "Market",
+      "title": "Dükkânda neler var",
+      "lead": "Taze manav, şarküteri, vegan ve glutensiz ürünler. Tarabya’da sakin bir mahalle marketi."
+    },
+    "menu": {
+      "visible": true,
+      "eyebrow": "Ürünler",
+      "title": "Reyonlarımız",
+      "lead": "Günün meyve-sebzesi, şarküteri ve özel beslenme reyonu. Güncel fiyat ve stok için yazın."
+    },
+    "about": { "visible": true },
+    "gallery": {
+      "visible": true,
+      "eyebrow": "Mekân",
+      "title": "Şalcıkır Caddesi 9A",
+      "lead": "Tabela, vitrin ve reyon."
+    },
+    "testimonials": {
+      "visible": true,
+      "eyebrow": "Komşularımız",
+      "title": "Mahalleden notlar",
+      "lead": "30 değerlendirme, 4,8 puan. Alıntılar Google Haritalar’dan."
+    },
+    "faq": {
+      "visible": true,
+      "eyebrow": "Bilgi",
+      "title": "Kısa sorular",
+      "lead": "Yanıtı burada yoksa bize yazın."
+    },
+    "map": { "visible": true },
+    "contact": {
+      "visible": true,
+      "eyebrow": "Ziyaret",
+      "title": "Tarabya’da sizi bekleriz",
+      "lead": "Şalcıkır Caddesi 9A. Sipariş ve bilgi için yazın.",
+      "cardTitle": "İletişim",
+      "cardSubtitle": "Şalcıkır Caddesi 9A"
+    }
+  },
+
+  "brand": {
+    "name": "Gusto Organik",
+    "subName": "Doğal Ürünler",
+    "legalName": "Gusto Organik",
+    "category": "Organik gıda marketi",
+    "symbol": "GO",
+
+    "phoneType": "mobile",
+    "phone": "0531 648 86 96",
+    "whatsappPhone": "0531 648 86 96",
+    "hasWhatsapp": true,
+    "orderIntroText": "Merhaba, Gusto Organik'ten bilgi / sipariş vermek istiyorum.",
+
+    "address": "Tarabya, Şalcıkır Cd. 9A, 34457",
+    "addressDistrict": "Sarıyer / İstanbul",
+    "addressNote": "Tarabya, Şalcıkır Caddesi",
+    "postalCode": "34457",
+    "websiteUrl": "",
+
+    "googleMaps": {
+      "placeUrl": "https://share.google/ybEyERWvXu7t6y0h0",
+      "embedUrl": "https://maps.google.com/maps?q=41.1381258,29.0524474(Gusto%20Organik)&z=17&hl=tr&output=embed",
+      "placeId": "0x14cab560139cc873:0x15ccd5902cc23270",
+      "reviewUrl": "https://search.google.com/local/writereview?placeid=0x14cab560139cc873:0x15ccd5902cc23270",
+      "lat": 41.1381258,
+      "lng": 29.0524474,
+      "rating": "4.8",
+      "reviewCount": "30",
+      "lastChecked": "2026-09-16"
+    },
+
+    "instagramHandle": "gustoorganik",
+    "instagramUrl": "https://www.instagram.com/gustoorganik/",
+
+    "platforms": []
+  },
+
+  "hours": {
+    "timezone": "Europe/Istanbul",
+    "openTemplate": "Şu an Açık ({close}'e kadar)",
+    "closingSoonTemplate": "Kapanışa {minutes} dakika",
+    "closedTemplate": "Şu an Kapalı — {nextDayLabel} {open} açılıyor",
+    "closedTodayTemplate": "Bugün Kapalı — {nextDayLabel} {open} açılıyor",
+    "days": [
+      { "key": "mon", "label": "Pazartesi", "closed": false, "ranges": [{ "open": "08:30", "close": "20:30" }] },
+      { "key": "tue", "label": "Salı", "closed": false, "ranges": [{ "open": "09:00", "close": "20:30" }] },
+      { "key": "wed", "label": "Çarşamba", "closed": false, "ranges": [{ "open": "09:00", "close": "20:30" }] },
+      { "key": "thu", "label": "Perşembe", "closed": false, "ranges": [{ "open": "09:00", "close": "20:30" }] },
+      { "key": "fri", "label": "Cuma", "closed": false, "ranges": [{ "open": "09:00", "close": "20:30" }] },
+      { "key": "sat", "label": "Cumartesi", "closed": false, "ranges": [{ "open": "09:00", "close": "19:30" }] },
+      { "key": "sun", "label": "Pazar", "closed": false, "ranges": [{ "open": "11:00", "close": "18:00" }] }
+    ],
+    "specialDays": []
+  },
+
+  "hero": {
+    "badge": "Tarabya · Doğal Ürünler",
+    "titleLine1": "Tarabya’da taze",
+    "titleAccent": "organik ürünler",
+    "subtitle": "Şalcıkır Caddesi 9A. Organik meyve-sebze, şarküteri ve günlük taze reyon — mahallenin sakin marketi.",
+    "mainImage": {
+      "url": "images/hero-kapak.webp",
+      "focalX": 50,
+      "focalY": 42,
+      "width": 1517,
+      "height": 1132,
+      "alt": "Gusto Organik Tarabya dış cephe tabelası ve vitrin"
+    },
+    "trustStats": [
+      { "num": "4,8", "label": "Google · 30 değerlendirme" },
+      { "num": "9A", "label": "Şalcıkır Caddesi, Tarabya" },
+      { "num": "Her gün", "label": "Açık — saatler güne göre değişir" }
+    ]
+  },
+
+  "features": [
+    { "title": "Taze manav", "description": "Organik meyve ve sebze. Yorumlarda tazelik ve çeşit öne çıkıyor.", "icon": "leaf" },
+    { "title": "Şarküteri", "description": "Günlük şarküteri reyonu. Aradığınız ürün için yazın.", "icon": "star" },
+    { "title": "Özel beslenme", "description": "Vegan ve glutensiz ürünler. Güncel stok için yazın.", "icon": "heart" },
+    { "title": "Ev servisi", "description": "Mahalle teslimatı yorumlarda geçiyor. Kapsam için bize yazın.", "icon": "truck" }
+  ],
+
+  "about": {
+    "eyebrow": "Mekân",
+    "title": "Tarabya’nın sakin organik marketi",
+    "paragraphs": [
+      "Gusto Organik, Şalcıkır Caddesi 9A’da durur. Tabelada doğal ürünler yazar; içeride taze manav ve şarküteri vardır.",
+      "Komşularımız temiz içeriği, ilgili kadroyu ve ev servisini anlatıyor. Instagram’da @gustoorganik."
+    ],
+    "quote": "Sokağımızın altına açılan cevher.",
+    "image": {
+      "url": "images/urun-1.webp",
+      "focalX": 50,
+      "focalY": 40,
+      "width": 1024,
+      "height": 1365,
+      "alt": "Gusto Organik iç mekân reyonları"
+    }
+  },
+
+  "gallery": [
+    {
+      "url": "images/hero-kapak.webp",
+      "focalX": 50,
+      "focalY": 46,
+      "width": 1517,
+      "height": 1132,
+      "title": "Tabela ve vitrin",
+      "desc": "Şalcıkır Caddesi 9A.",
+      "alt": "Gusto Organik dış cephe"
+    },
+    {
+      "url": "images/urun-1.webp",
+      "focalX": 50,
+      "focalY": 40,
+      "width": 1024,
+      "height": 1365,
+      "title": "Reyon",
+      "desc": "Ahşap raflar, taze reyon.",
+      "alt": "Gusto Organik iç mekân reyonları"
+    },
+    {
+      "url": "images/mekan-1.webp",
+      "focalX": 48,
+      "focalY": 42,
+      "width": 1600,
+      "height": 972,
+      "title": "Doğal bakım",
+      "desc": "Kişisel bakım ve doğal kozmetik.",
+      "alt": "Gusto Organik doğal bakım reyonu"
+    }
+  ],
+
+  "menuCategories": [
+    {
+      "key": "manav",
+      "title": "Manav",
+      "icon": "leaf",
+      "items": [
+        { "id": "meyve", "title": "Organik meyve", "desc": "Günün taze meyvesi. Stok için yazın.", "price": "Fiyat için yazın", "priceValue": 0, "isPopular": true },
+        { "id": "sebze", "title": "Organik sebze", "desc": "Mevsim sebzesi. Stok için yazın.", "price": "Fiyat için yazın", "priceValue": 0, "isPopular": false }
+      ]
+    },
+    {
+      "key": "sarkuteri",
+      "title": "Şarküteri",
+      "icon": "star",
+      "items": [
+        { "id": "sarkuteri", "title": "Şarküteri", "desc": "Günlük şarküteri reyonu.", "price": "Fiyat için yazın", "priceValue": 0, "isPopular": false }
+      ]
+    },
+    {
+      "key": "ozel",
+      "title": "Özel beslenme",
+      "icon": "heart",
+      "items": [
+        { "id": "vegan", "title": "Vegan ürünler", "desc": "Vegan reyon. Güncel stok için yazın.", "price": "Fiyat için yazın", "priceValue": 0, "isPopular": false },
+        { "id": "glutensiz", "title": "Glutensiz ürünler", "desc": "Glutensiz reyon. Güncel çeşit için yazın.", "price": "Fiyat için yazın", "priceValue": 0, "isPopular": false }
+      ]
+    }
+  ],
+
+  "testimonials": [
+    {
+      "author": "Ahmet Sahon",
+      "stars": 5,
+      "badge": "Yerel Rehber",
+      "quote": "Organik taze meyve sebzeler harika, şarküteride aradığım her şeyi bulabildim, eve servisleri de var. Tavsiye ederim.",
+      "source": "Google Haritalar"
+    },
+    {
+      "author": "Vera Caen Algranati",
+      "stars": 5,
+      "badge": "Yerel Rehber",
+      "quote": "Sokağımızın altına açılan cevher. Temiz içerik, ilgili, donanımlı kadro ve en güzeli de evimize servis.",
+      "source": "Google Haritalar"
+    }
+  ],
+
+  "faq": [
+    { "question": "Sipariş veya bilgi için nasıl ulaşabilirim?", "answer": "{{contact.ctaLong}}. Numaramız {{brand.phone}}." },
+    { "question": "Çalışma saatleriniz nedir?", "answer": "Pazartesi 08:30–20:30, salı–cuma 09:00–20:30, cumartesi 09:00–19:30, pazar 11:00–18:00." },
+    { "question": "Ev servisi var mı?", "answer": "Mahalle teslimatı yorumlarda geçiyor. Güncel kapsam için {{contact.verb}}." },
+    { "question": "Neler satıyorsunuz?", "answer": "Organik meyve-sebze, şarküteri, vegan ve glutensiz ürünler. Güncel reyon için {{contact.verb}}." },
+    { "question": "Neredesiniz?", "answer": "Tarabya, Şalcıkır Cd. 9A, 34457 Sarıyer / İstanbul." }
+  ],
+
+  "footer": {
+    "desc": "Tarabya’da organik market. Manav, şarküteri, vegan ve glutensiz ürünler.",
+    "copyright": "© 2026 Gusto Organik. Tüm hakları saklıdır."
+  },
+
+  "seo": {
+    "siteUrl": "https://basaranbaran.github.io/gusto-organik",
+    "canonical": "https://basaranbaran.github.io/gusto-organik/",
+    "ogImage": "https://basaranbaran.github.io/gusto-organik/images/hero-kapak.webp",
+    "areaServed": ["Tarabya", "Sarıyer", "İstanbul"],
+    "knowsAbout": ["Organik Gıda", "Organik Market", "Meyve Sebze", "Şarküteri", "Tarabya"],
+    "home": {
+      "title": "Gusto Organik | Tarabya — Doğal Ürünler",
+      "description": "Tarabya Şalcıkır Cd. 9A. Organik meyve-sebze, şarküteri ve doğal ürünler. 4,8 Google puanı.",
+      "ogTitle": "Gusto Organik — Tarabya",
+      "ogDescription": "Şalcıkır Caddesi 9A, Tarabya. Organik meyve-sebze ve şarküteri. 0531 648 86 96."
+    },
+    "aggregateRating": { "ratingValue": "4.8", "reviewCount": "30", "bestRating": "5", "worstRating": "1" }
+  }
+}

@@ -1,0 +1,51 @@
+# Gusto Organik
+
+> Tarabya Şalcıkır Cd. 9A. Organik meyve-sebze, şarküteri ve doğal ürünler. 4,8 Google puanı.
+
+## Temel Bilgiler
+- Kategori: Organik gıda marketi
+- Adres: Tarabya, Şalcıkır Cd. 9A, 34457, Sarıyer / İstanbul
+- Telefon: 0531 648 86 96
+- İletişim Kanalı: WhatsApp
+- Instagram: https://www.instagram.com/gustoorganik/
+- Google Haritalar: https://share.google/ybEyERWvXu7t6y0h0
+- Google Puanı: 4.8 (30 yorum)
+- Web Sitesi: https://basaranbaran.github.io/gusto-organik
+
+## Çalışma Saatleri (Europe/Istanbul)
+- Pazartesi: 08:30 — 20:30
+- Salı — Cuma: 09:00 — 20:30
+- Cumartesi: 09:00 — 19:30
+- Pazar: 11:00 — 18:00
+
+## İmza Ürünler (fiyatlar panelden girilecek)
+### Manav
+  - Organik meyve — Fiyat için yazın — Günün taze meyvesi. Stok için yazın.
+  - Organik sebze — Fiyat için yazın — Mevsim sebzesi. Stok için yazın.
+
+### Şarküteri
+  - Şarküteri — Fiyat için yazın — Günlük şarküteri reyonu.
+
+### Özel beslenme
+  - Vegan ürünler — Fiyat için yazın — Vegan reyon. Güncel stok için yazın.
+  - Glutensiz ürünler — Fiyat için yazın — Glutensiz reyon. Güncel çeşit için yazın.
+
+## Sıkça Sorulan Sorular
+Q: Sipariş veya bilgi için nasıl ulaşabilirim?
+A: Mesajınızı yazın; tek tıkla WhatsApp üzerinden gönderin. Numaramız 0531 648 86 96.
+
+Q: Çalışma saatleriniz nedir?
+A: Pazartesi 08:30–20:30, salı–cuma 09:00–20:30, cumartesi 09:00–19:30, pazar 11:00–18:00.
+
+Q: Ev servisi var mı?
+A: Mahalle teslimatı yorumlarda geçiyor. Güncel kapsam için yazın.
+
+Q: Neler satıyorsunuz?
+A: Organik meyve-sebze, şarküteri, vegan ve glutensiz ürünler. Güncel reyon için yazın.
+
+Q: Neredesiniz?
+A: Tarabya, Şalcıkır Cd. 9A, 34457 Sarıyer / İstanbul.
+
+## Notlar
+- Bu dosya otomatik üretilir: tools/build.mjs → data/site-data.json.
+- Menü fiyatları işletme sahibi tarafından admin panelinden güncellenir.
