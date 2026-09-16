@@ -318,10 +318,22 @@
 
   T.heroTrust = function (data) {
     return ((data.hero && data.hero.trustStats) || []).map(function (s) {
+      var inner = [
+        '  <span class="trust-stat-num font-display">' + esc(s.num) + '</span>',
+        '  <span class="trust-stat-label">' + esc(s.label) + '</span>'
+      ].join('\n');
+      var href = String(s.href || '').trim();
+      var isSafe = href && (/^https:\/\//i.test(href) || href.charAt(0) === '#');
+      if (isSafe) {
+        return lines([
+          '<a class="trust-stat-card surface-glass trust-stat-link" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">',
+          inner,
+          '</a>'
+        ]);
+      }
       return lines([
         '<div class="trust-stat-card surface-glass">',
-        '  <span class="trust-stat-num font-display">' + esc(s.num) + '</span>',
-        '  <span class="trust-stat-label">' + esc(s.label) + '</span>',
+        inner,
         '</div>'
       ]);
     }).join('\n');

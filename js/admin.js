@@ -692,15 +692,17 @@
       '    ' + field('Sayı / Kısa Değer', inputHtml('trustNum-' + i, t.num)),
       '    ' + field('Etiket', inputHtml('trustLabel-' + i, t.label)),
       '  </div>',
+      '  ' + field('Bağlantı (isteğe bağlı)', inputHtml('trustHref-' + i, t.href || ''), 'Örn. Google Haritalar yol tarifi. Boşsa kart tıklanmaz.'),
       '</div>'
     ]);
   }
   function bindTrustRow(i) {
-    ['trustNum-' + i, 'trustLabel-' + i].forEach(function (id) {
+    ['trustNum-' + i, 'trustLabel-' + i, 'trustHref-' + i].forEach(function (id) {
       on(document.getElementById(id), 'blur', function () {
         mutate(function (d) {
           d.hero.trustStats[i].num = document.getElementById('trustNum-' + i).value.trim();
           d.hero.trustStats[i].label = document.getElementById('trustLabel-' + i).value.trim();
+          d.hero.trustStats[i].href = document.getElementById('trustHref-' + i).value.trim();
         });
       });
     });

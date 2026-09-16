@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "contentVersion": "2026-09-17T00:45:00.000Z",
+  "contentVersion": "2026-09-17T00:52:00.000Z",
   "menuStatus": "pending",
 
   "theme": {
@@ -129,8 +129,12 @@
     },
     "trustStats": [
       { "num": "4,8", "label": "Google · 30 değerlendirme" },
-      { "num": "9A", "label": "Şalcıkır Caddesi, Tarabya" },
-      { "num": "Her gün", "label": "Açık — saatler güne göre değişir" }
+      {
+        "num": "Tarabya",
+        "label": "Şalcıkır Cd. 9A · Yol tarifi",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=41.1381258,29.0524474&destination_place_id=0x14cab560139cc873:0x15ccd5902cc23270"
+      },
+      { "num": "7 gün", "label": "Pazartesi–Pazar açık" }
     ]
   },
 
